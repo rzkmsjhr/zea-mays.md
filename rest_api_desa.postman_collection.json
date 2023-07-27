@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "049bf595-4271-4086-a002-c5241fc491ec",
+		"name": "rest_api_desa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12671528"
+	},
+	"item": [
+		{
+			"name": "Get All Desa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/desa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Desa by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/desa/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Desa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "code",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "district_code",
+							"value": "110101",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "desa abc",
+							"type": "text"
+						},
+						{
+							"key": "meta",
+							"value": "ini meta",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/desa",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Desa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"desa update coba\",\r\n    \"code\":1,\r\n    \"district_code\":110101\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/desa/83818",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa",
+						"83818"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Desa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/desa/83818",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa",
+						"83818"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
